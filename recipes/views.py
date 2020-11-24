@@ -27,7 +27,7 @@ def user_list(request):
 @api_view(['GET', 'PUT', 'DELETE'])
 def getUser(request, pk):
     """
-    Retrieve, update or delete a customer instance.
+    Retrieve, update or delete a user instance.
     """
     try:
         user = User.objects.get(pk=pk)
@@ -71,7 +71,7 @@ def creator_list(request):
 @api_view(['GET', 'PUT', 'DELETE'])
 def getCreator(request, pk):
     """
-    Retrieve, update or delete a customer instance.
+    Retrieve, update or delete a user instance.
     """
     try:
         creator = Creator.objects.get(pk=pk)
@@ -115,7 +115,7 @@ def recipe_list(request):
 @api_view(['GET', 'PUT', 'DELETE'])
 def getRecipe(request, pk):
     """
-    Retrieve, update or delete a customer instance.
+    Retrieve, update or delete a user instance.
     """
     try:
         recipe = Recipe.objects.get(pk=pk)
