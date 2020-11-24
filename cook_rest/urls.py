@@ -16,6 +16,9 @@ urlpatterns = [
     url(r'^api/creators/$', views.creator_list),
     url(r'^api/creators/(?P<pk>[0-9]+)$', views.getCreator),
     path('recipes/', views.recipe_list),
-    url(r'^api/recipes/$', views.recipe_list),
+    url(r'^api/recipes/$', views.recipe_list), 
     url(r'^api/recipes/(?P<pk>[0-9]+)$', views.getRecipe)
+
+    #path('register/', obtain_jwt_token),
+
 ]

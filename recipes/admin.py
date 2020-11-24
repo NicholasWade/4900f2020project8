@@ -2,9 +2,9 @@ from django.contrib import admin
 from .models import User, Creator, Recipe
 
 class UserList(admin.ModelAdmin):
-    list_display = ('user_number', 'name', 'cooking_experience', 'email')
-    list_filter = ('user_number', 'name', 'cooking_experience')
-    search_fields = ('user_number', 'name')
+    list_display = ('user_number', 'user_full_name', 'cooking_experience', 'email')
+    list_filter = ('user_number', 'user_full_name', 'cooking_experience')
+    search_fields = ('user_number', 'user_full_name')
     ordering = ['user_number']
 
 

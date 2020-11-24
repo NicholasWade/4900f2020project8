@@ -3,8 +3,8 @@ from django.utils import timezone
 
 # Create your models here.
 class User(models.Model):   #customer
+    user_full_name = models.CharField(max_length=100)
     user_number = models.IntegerField(blank=False, null=False)
-    name = models.CharField(max_length=100)
     cooking_experience = models.CharField(max_length=200)
     email = models.EmailField(max_length=200)
     created_date = models.DateTimeField(
