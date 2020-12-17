@@ -50,6 +50,7 @@ class Recipe(models.Model):      #stock
     recipe_description = models.CharField(max_length=200)
     ingredients = models.CharField(max_length=1000)
     directions = models.CharField(max_length=5000)
+    Category = models.CharField(max_length=50)
     created_date = models.DateTimeField(
         default=timezone.now)
     updated_date = models.DateTimeField(auto_now_add=True)

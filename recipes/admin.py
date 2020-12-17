@@ -16,7 +16,7 @@ class CreatorList(admin.ModelAdmin):
 
 
 class RecipeList(admin.ModelAdmin):
-    list_display = ('creator', 'recipe_name', 'recipe_description', 'ingredients', 'directions')
+    list_display = ('creator', 'recipe_name', 'recipe_description', 'ingredients', 'directions', 'Category')
     list_filter = ('creator','recipe_name')
     search_fields = ('creator','recipe_name')
     ordering = ['creator']
